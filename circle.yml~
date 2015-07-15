@@ -2,6 +2,7 @@ machine:
   node:
     version: 0.10.25
 dependencies:
+  branch: master
   pre:
     - npm install -g gulp
     - npm install -g bower
@@ -9,4 +10,6 @@ dependencies:
     - cd ui && bower install
 test:
   override:
-    - cd ui && gulp analyze	
+    - cd ui && gulp jshint
+    - cd ui && gulp test
+    - cd ui && gulp protractor		
