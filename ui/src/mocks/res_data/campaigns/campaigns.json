@@ -1,0 +1,259 @@
+{
+	"accounts" : [
+		 {
+			"id" : "1",
+			"name" : "Fiverr Unbranded",
+			"crs" : [
+				{
+					"camp_name" : "graphic_design_usa",
+					"id" : "1",
+					"status" : "reviewed",
+					"last_action" : "update",
+					"available_actions" : ["cancel", "approve"],
+					"actions_summary": {
+						"pending" : 32, 
+						"rejected": 3
+					}
+					
+				},
+				{
+					"camp_name" : "caricatures_usa",
+					"id" : "2",
+					"status" : "pending",
+					"last_action" : "update",
+					"last_action_date": "",
+					"available_actions" : ["cancel"],
+					"actions_summary": {
+						"pending" : 32, 
+						"rejected": 3
+					}
+				},
+				{
+					"camp_name" : "brochures_usa",
+					"id" : "3",
+					"status" : "approved",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel", "send", "uncancel"],
+					"actions_summary": {
+						"pending" : 32, 
+						"rejected": 3
+					}
+				},
+				{
+					"camp_name" : "fiverr",
+					"id" : "4",
+					"status" : "sent",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel"],
+					"actions_summary": {
+						"pending" : 32, 
+						"rejected": 3
+					}
+				}
+				,
+				{
+					"camp_name" : "fiverr 2",
+					"id" : "5",
+					"status" : "cancelled",
+					"last_action" : "update",
+					"available_actions" : ["uncancel"],
+					"actions_summary": {
+						"pending" : 32, 
+						"rejected": 3
+					}
+				}
+			]
+		},
+		{
+			"id" : "2",
+			"name" : "Fiverr Branded",
+			"crs" : [
+				{
+					"camp_name" : "graphic_design_usa",
+					"id" : "1",
+					"status" : "reviewed",
+					"last_action" : "update",
+					"last_action_date": "",
+					"available_actions" : ["cancel", "approve"]
+				},
+				{
+					"camp_name" : "caricatures_usa",
+					"id" : "2",
+					"status" : "pending",
+					"last_action" : "update",
+					"last_action_date": "",
+					"available_actions" : ["cancel"]
+				},
+				{
+					"camp_name" : "brochures_usa",
+					"id" : "3",
+					"status" : "approved",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel", "send", "uncancel"]
+				},
+				{
+					"camp_name" : "fiverr",
+					"id" : "4",
+					"status" : "sent",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel"]
+				}
+				,
+				{
+					"camp_name" : "fiverr 2",
+					"id" : "5",
+					"status" : "cancelled",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["unapprove"]
+				}
+			]
+		},
+		{
+			"id" : "3",
+			"name" : "888 Unbranded",
+			"crs" : [
+				{
+					"camp_name" : "graphic_design_usa",
+					"id" : "1",
+					"status" : "reviewed",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel", "approve"]
+				},
+				{
+					"camp_name" : "caricatures_usa",
+					"id" : "2",
+					"status" : "pending",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel"]
+				},
+				{
+					"camp_name" : "brochures_usa",
+					"id" : "3",
+					"status" : "approved",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel", "send", "uncancel"]
+				},
+				{
+					"camp_name" : "fiverr",
+					"id" : "4",
+					"status" : "sent",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel"]
+				}
+				,
+				{
+					"camp_name" : "fiverr 2",
+					"id" : "5",
+					"status" : "cancelled",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : []
+				}
+			]
+		},
+		{
+			"id" : "4",
+			"name" : "888 Unbranded 1",
+			"crs" : [
+			{
+					"camp_name" : "graphic_design_usa",
+					"id" : "1",
+					"status" : "reviewed",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel", "approve"]
+				},
+				{
+					"camp_name" : "caricatures_usa",
+					"id" : "2",
+					"status" : "pending",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel"]
+				},
+				{
+					"camp_name" : "brochures_usa",
+					"id" : "3",
+					"status" : "approved",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel", "send", "uncancel"]
+				},
+				{
+					"camp_name" : "fiverr",
+					"id" : "4",
+					"status" : "sent",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel"]
+				}
+				,
+				{
+					"camp_name" : "fiverr 2",
+					"id" : "5",
+					"status" : "cancelled",
+					"last_action" : "update",
+					"last_action_date": "2014-07-02T15:22:23.815567",
+					"available_actions" : ["unapprove"]
+				}
+			]
+		},
+		{
+			"id" : "5",
+			"name" : "888 Unbranded 2",
+			"crs" : [
+			{
+					"camp_name" : "ssssss",
+					"id" : "1",
+					"status" : "reviewed",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel", "approve"]
+				},
+				{
+					"camp_name" : "caricatures_usa",
+					"id" : "2",
+					"status" : "pending",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel"]
+				},
+				{
+					"camp_name" : "brochures_usa",
+					"id" : "3",
+					"status" : "sent",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel", "send", "uncancel"]
+				},
+				{
+					"camp_name" : "fiverr",
+					"id" : "4",
+					"status" : "sent",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : ["cancel"]
+				}
+				,
+				{
+					"camp_name" : "fiverr 2",
+					"id" : "5",
+					"status" : "sent",
+					"last_action" : "update",
+					"last_action_date": "2015-07-02T15:22:23.815567",
+					"available_actions" : []
+				}
+			]
+		}
+		
+	]
+}

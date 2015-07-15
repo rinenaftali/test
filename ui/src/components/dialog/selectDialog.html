@@ -1,0 +1,24 @@
+<md-dialog class="cc-dialog dialog-select" md-theme="{{ dialog.theme | translate}}" aria-label="{{ dialog.ariaLabel | translate}}" >
+	<md-dialog-content>
+	<h2 class="md-title">{{ dialog.title | translate}}</h2>
+	<p>{{ dialog.content | translate}}</p>
+	<ui-select class="select" ng-model="dialog.okValue">
+		    <ui-select-match placeholder="">{{$select.selected}}</ui-select-match>
+		    <ui-select-choices repeat="option in dialog.data.options | filter: $select.search">
+		    	<div ng-bind-html="option | highlight: $select.search"></div>
+		    </ui-select-choices>
+  		</ui-select>
+  		<!--<md-select placeholder="State" ng-model="dialog.okValue">
+        <md-option ng-repeat="option in dialog.data.options" value="{{option}}">{{option.name}}</md-option>
+      </md-select>-->
+	<div class="error" ng-if="dialog.error">
+		<span >{{dialog.error}}</span>
+	</div>
+	</md-dialog-content>
+	
+		
+	<div class="md-actions" >
+		<md-button ng-click="dialog.abort()" class="md-primary"> {{dialog.cancel | translate}} </md-button>
+		<md-button ng-disabled="!dialog.okValue" ng-click="dialog.hide()" class="md-primary"> {{dialog.ok | translate}} </md-button>
+	</div>
+</md-dialog>

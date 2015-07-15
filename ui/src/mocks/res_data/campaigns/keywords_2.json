@@ -1,0 +1,20 @@
+{ 
+	"cr_actions" :[
+	{
+		"id" : "1",
+		"keyword" : "[make a cartoon online]",
+		"type" : "exact",
+		"adgroup_name" : "Cartoon_Make_Exact",
+		"action" : "add",
+		"status" : "pending"
+	},
+	{
+		"id" : "2",
+		"keyword" : "+caricaturist +great",
+		"type" : "broad",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "remove",
+		"status" : "approved"
+	}
+	]
+}

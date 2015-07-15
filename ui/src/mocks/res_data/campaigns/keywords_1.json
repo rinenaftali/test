@@ -1,0 +1,240 @@
+{ 
+	"camp_name": "test cmpaign",
+	"seaccount_name" : "account 1",
+	"available_actions" : ["update"],
+	"available_adgroups" : ["Panama City Beach, FL"],
+	"cr_actions" :[
+	{
+		"id" : "1",
+		"keyword" : "[make a cartoon online]",
+		"keyword_match_type" : "exact",
+		"adgroup_name" : "Cartoon_Make_Exact",
+		"action" : "add",
+		"status" : "pending"
+	},
+	{
+		"id" : "2",
+		"keyword" : "+caricaturist +great",
+		"keyword_match_type" : "broad",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "remove",
+		"status" : "approved"
+	},
+	{
+		"id" : "3",
+		"keyword" : "+make +your +cartoon",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Cartoon_Make_Your_Own_BMM",
+		"action" : "unchanged",
+		"status" : "rejected"
+	},
+	{
+		"id" : "4",
+		"keyword" : "+caricaturist +best",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "unchanged",
+		"status" : "pending"
+	}
+	,
+	{
+		"id" : "2",
+		"keyword" : "+caricaturist +great",
+		"keyword_match_type" : "broad",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "remove",
+		"status" : "approved"
+	},
+	{
+		"id" : "3",
+		"keyword" : "+make +your +cartoon",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Cartoon_Make_Your_Own_BMM",
+		"action" : "unchanged",
+		"status" : "rejected"
+	},
+	{
+		"id" : "4",
+		"keyword" : "+caricaturist +best",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "unchanged",
+		"status" : "pending"
+	}
+	,
+	{
+		"id" : "2",
+		"keyword" : "+caricaturist +great",
+		"keyword_match_type" : "broad",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "remove",
+		"status" : "approved"
+	},
+	{
+		"id" : "3",
+		"keyword" : "+make +your +cartoon",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Cartoon_Make_Your_Own_BMM",
+		"action" : "unchanged",
+		"status" : "rejected"
+	},
+	{
+		"id" : "4",
+		"keyword" : "+caricaturist +best",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "unchanged",
+		"status" : "pending"
+	}
+	,
+	{
+		"id" : "2",
+		"keyword" : "+caricaturist +great",
+		"keyword_match_type" : "broad",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "remove",
+		"status" : "approved"
+	},
+	{
+		"id" : "3",
+		"keyword" : "+make +your +cartoon",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Cartoon_Make_Your_Own_BMM",
+		"action" : "unchanged",
+		"status" : "rejected"
+	},
+	{
+		"id" : "4",
+		"keyword" : "+caricaturist +best",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "unchanged",
+		"status" : "pending"
+	}
+	,
+	{
+		"id" : "2",
+		"keyword" : "+caricaturist +great",
+		"keyword_match_type" : "broad",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "remove",
+		"status" : "approved"
+	},
+	{
+		"id" : "3",
+		"keyword" : "+make +your +cartoon",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Cartoon_Make_Your_Own_BMM",
+		"action" : "unchanged",
+		"status" : "rejected"
+	},
+	{
+		"id" : "4",
+		"keyword" : "+caricaturist +best",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "unchanged",
+		"status" : "pending"
+	}
+	,
+	{
+		"id" : "2",
+		"keyword" : "+caricaturist +great",
+		"keyword_match_type" : "broad",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "remove",
+		"status" : "approved"
+	},
+	{
+		"id" : "3",
+		"keyword" : "+make +your +cartoon",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Cartoon_Make_Your_Own_BMM",
+		"action" : "unchanged",
+		"status" : "rejected"
+	},
+	{
+		"id" : "4",
+		"keyword" : "+caricaturist +best",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "unchanged",
+		"status" : "pending"
+	}
+	,
+	{
+		"id" : "2",
+		"keyword" : "+caricaturist +great",
+		"keyword_match_type" : "broad",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "remove",
+		"status" : "approved"
+	},
+	{
+		"id" : "3",
+		"keyword" : "+make +your +cartoon",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Cartoon_Make_Your_Own_BMM",
+		"action" : "unchanged",
+		"status" : "rejected"
+	},
+	{
+		"id" : "4",
+		"keyword" : "+caricaturist +best",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "unchanged",
+		"status" : "pending"
+	}
+	,
+	{
+		"id" : "2",
+		"keyword" : "+caricaturist +great",
+		"keyword_match_type" : "broad",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "remove",
+		"status" : "approved"
+	},
+	{
+		"id" : "3",
+		"keyword" : "+make +your +cartoon",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Cartoon_Make_Your_Own_BMM",
+		"action" : "unchanged",
+		"status" : "rejected"
+	},
+	{
+		"id" : "4",
+		"keyword" : "+caricaturist +best",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "unchanged",
+		"status" : "pending"
+	}
+	,
+	{
+		"id" : "2",
+		"keyword" : "+caricaturist +great",
+		"keyword_match_type" : "broad",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "remove",
+		"status" : "approved"
+	},
+	{
+		"id" : "3",
+		"keyword" : "+make +your +cartoon",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Cartoon_Make_Your_Own_BMM",
+		"action" : "unchanged",
+		"status" : "rejected"
+	},
+	{
+		"id" : "4",
+		"keyword" : "ssssssssssssssssss",
+		"keyword_match_type" : "phrase",
+		"adgroup_name" : "Caricaturist_BMM",
+		"action" : "unchanged",
+		"status" : "pending"
+	}
+	]
+}

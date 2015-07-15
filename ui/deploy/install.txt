@@ -1,0 +1,10 @@
+install ui
+	sudo curl -sL https://rpm.nodesource.com/setup | sudo bash -
+	yum install -y nodejs
+	yum install gcc-c++ make
+	sudo npm -g install bower
+	sudo yum install bzip2
+	sudo npm -g install gulp
+	cd  brain/ui
+	sudo npm install
+	bower install	

@@ -1,0 +1,17 @@
+<md-dialog class="cc-dialog" md-theme="{{ dialog.theme | translate}}" aria-label="{{ dialog.ariaLabel | translate}}" >
+	<md-dialog-content>
+	<h2 class="md-title">{{ dialog.title | translate}}</h2>
+	<p>{{ dialog.content | translate}}</p>
+	<div class="error" ng-if="dialog.error">
+		<span >{{dialog.error}}</span>
+	</div>
+	</md-dialog-content>
+	
+	<div ng-if="dialog.loading" layout-align="space-around" class="dialog-loading">
+      		<md-progress-circular md-mode="indeterminate" md-diameter="20"></md-progress-circular>
+    </div>	 			
+	<div class="md-actions" >
+		<md-button ng-click="dialog.abort()" class="md-primary"> {{dialog.cancel | translate}} </md-button>
+		<md-button ng-click="dialog.hide()" class="md-primary" ng-disabled="!dialog.okValue"> {{dialog.ok | translate}} </md-button>
+	</div>
+</md-dialog>

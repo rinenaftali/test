@@ -1,0 +1,32 @@
+<div layout="row" layout-align="start center">
+	<div flex layout="row" layout-align="start center">
+		<div  ng-repeat="action in actions">
+			<md-button ng-if="action.data.icon && !action.display(action.data)" class="md-icon-button"
+				ng-disabled="action.disabled(action.data)"
+				ng-click="action.executeAction($event,action.data)"
+				aria-label="Action"> <md-icon 
+				md-font-icon="{{action.data.class}}"
+				title="{{action.data.label | translate}}"></md-icon> 
+			</md-button>
+			<md-button ng-if="!action.data.icon && !action.display(action.data)" ng-class="action.data.class"
+				ng-disabled="action.disabled(action.data)"
+				ng-click="action.executeAction($event,action.data)"
+				aria-label="Action">{{action.data.label | translate}}
+			</md-button>
+		</div>
+	</div>
+	<div flex layout="row" layout-align="end center">
+		<div  ng-repeat="action in generalActions">
+			<md-button ng-if="!action.display(action.data)" class="md-icon-button"
+				ng-disabled="action.disabled(action.data)"
+				ng-click="action.executeAction($event,action.data)"
+				aria-label="Action"> <md-icon 
+				md-font-icon="{{action.data.class}}"
+				title="{{action.data.label | translate}}"></md-icon> 
+			</md-button>
+		</div>
+	</div>
+</div>
+
+<div flex layout="column" layout-fill cc-grid grid-options="gridOptions" grid-api="gridApi"></div>
+

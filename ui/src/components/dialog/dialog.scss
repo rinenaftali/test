@@ -1,0 +1,28 @@
+.cc-dialog{
+	.error{
+		font-size: small;
+  		color: red;	
+	}
+	h2{
+		padding-bottom: 20px;
+	}
+	.dialog-loading{
+		position: fixed;
+		top: 50%;
+  		left: 50%;
+	}
+	&.dialog-select{
+		md-dialog-content{
+			height: 240px;
+		}
+		 
+		.ui-select-container{
+			  margin-top: 20px;
+			min-width: 100%;
+		}
+		.select2-results {
+  			height: 70px;
+		}
+	}
+	
+}

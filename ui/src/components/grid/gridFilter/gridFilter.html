@@ -1,0 +1,67 @@
+<div class="ui-grid-filter-container" ng-controller="gridFilterCtrl"
+	ng-repeat="colFilter in col.filters"
+	ng-class="{'ui-grid-filter-cancel-button-hidden' : colFilter.disableCancelFilterButton === true }">
+	<div ng-if="colFilter.type === 'input'">
+		<input type="text" class="ui-grid-filter-input"
+			ng-model="colFilter.term"
+			ng-attr-placeholder="{{colFilter.placeholder || ''}}">
+		<div class="ui-grid-filter-button" ng-click="colFilter.term = null"
+			ng-if="!colFilter.disableCancelFilterButton">
+			<i class="ui-grid-icon-cancel"
+				ng-show="colFilter.term !== undefined && colFilter.term !== null && colFilter.term !== ''">&nbsp;</i>
+		</div>
+	</div>
+	<div ng-if="colFilter.type === 'select'">
+		<ui-select class="ui-grid-filter-select" ng-model="colFilter.term"  ng-init="nameAttr = col.colDef.name" search-enabled="colFilter.searchEnabled">
+		    <ui-select-match placeholder=""><div ng-class="$select.selected.style">{{col.colDef.cellType !== 'icon' ? $select.selected.label : ''}}</div></ui-select-match>
+		    <ui-select-choices repeat="option.value as option in colFilter.selectOptions | filter : $select.search">
+		    	<div ng-class="option.style" ng-bind-html="col.colDef.cellType !== 'icon' ? (option.label | highlight: $select.search) : ''"></div>
+		    </ui-select-choices>
+  		</ui-select>
+		<div class="ui-grid-filter-button-select"
+			ng-click="colFilter.term = null"
+			ng-if="!colFilter.disableCancelFilterButton">
+			<i class="ui-grid-icon-cancel"
+				ng-show="colFilter.term !== undefined && colFilter.term != null">&nbsp;</i>
+		</div>
+	</div>
+	<div ng-if="colFilter.type === 'selectValuesTags'">
+		<!--<select class="ui-grid-filter-select" ng-model="colFilter.term"
+			ng-attr-placeholder="{{colFilter.placeholder || ''}}"
+			ng-options="row.entity[col.colDef.name] as (row.entity[col.colDef.name]) for row in grid.rows | unique: col.colDef.name:'entity'">
+			<option value=""></option>
+		</select>-->
+		<ui-select multiple class="ui-grid-filter-select" ng-model="colFilter.term"  ng-init="nameAttr = col.colDef.name">
+		    <ui-select-match placeholder="">{{$item.entity[col.colDef.name] | date: 'yyyy-MM-dd HH:mm:ss'}}</ui-select-match>
+		    <ui-select-choices repeat="row.entity[nameAttr] as  row in grid.rows | propFilter: nameAttr : $select.search :'entity'| unique: nameAttr:'entity'">
+		    	<div ng-if="col.colDef.type !== 'date'" ng-bind-html="row.entity[nameAttr] | highlight: $select.search"></div>
+		    	<div ng-if="col.colDef.type === 'date'" ng-bind-html="row.entity[nameAttr] | date: 'yyyy-MM-dd HH:mm:ss' | highlight: $select.search"></div>
+		    </ui-select-choices>
+  		</ui-select> 
+	</div>
+	<div ng-if="colFilter.type === 'selectValuesSingle'">
+		<ui-select  class="ui-grid-filter-select" ng-model="colFilter.term"  ng-init="nameAttr = col.colDef.name" search-enabled="colFilter.searchEnabled">
+		    <ui-select-match placeholder="">{{$select.selected.entity[col.colDef.name] ? (convertValue($select.selected.entity[nameAttr], col.colDef.type) | date: 'yyyy-MM-dd HH:mm:ss') : col.colDef.empty}}</ui-select-match>
+		    <ui-select-choices repeat="(row.entity[nameAttr] ? row.entity[nameAttr] : col.colDef.empty ) as  row in grid.rows | propFilter: nameAttr : $select.search :'entity' : col.colDef.empty | unique: nameAttr:'entity'">
+		    	<div ng-bind-html="row.entity[nameAttr] ? convertValue(row.entity[nameAttr], col.colDef.type) : col.colDef.empty | highlight: $select.search"></div>
+		    </ui-select-choices>
+  		</ui-select>
+  		<div class="ui-grid-filter-button-select"
+			ng-click="colFilter.term = null"
+			ng-if="!colFilter.disableCancelFilterButton">
+			<i class="ui-grid-icon-cancel"
+				ng-show="colFilter.term !== undefined && colFilter.term != null">&nbsp;</i>
+		</div> 
+	</div>
+	<div ng-if="colFilter.type === 'selectValues'">
+		<div isteven-multi-select input-model="data.rows"
+			output-model="data.output" button-label="value"
+			item-label="value" tick-property="selected" max-labels="1" translation="localLang" helper-elements="all filter none"></div>
+	</div>
+		<div ng-if="colFilter.type === 'multiSelect'">
+		<div isteven-multi-select input-model="colFilter.selectOptions"
+			output-model="data.output" button-label="label"
+			item-label="label" tick-property="selected" max-labels="1" translation="localLang" helper-elements="all filter none"></div>
+	</div>
+</div>
+

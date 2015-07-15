@@ -1,0 +1,61 @@
+.grid {
+	width: 99.9%;
+	height: 100%;
+	border-bottom: none;
+	.ui-grid-header-cell {
+		border: 0 !important; 
+		
+	}
+    .ui-grid-cell {
+    	border: 0 !important;
+    	border-bottom: solid 1px #DDDDDD !important; 
+    	.ui-grid-selection-row-header-buttons:not(.ui-grid-row-selected) {
+    		opacity: 0;
+    	}
+		
+	}
+	.ui-grid-row {
+		
+		&:hover .ui-grid-cell {
+ 			background-color: #EEEEEE !important;
+		}
+		
+		.ui-grid-cell {
+ 			background-color: #fdfdfd;
+ 			
+ 			&.disabled{
+				opacity : 0.50;
+			}
+		}
+	}
+	
+	.select2-container{
+		width: 90%;
+	}
+	
+	.ui-grid-top-panel{
+		overflow: inherit; 
+	    font-weight: normal;
+	}
+	.ui-grid-header-viewport {
+		overflow: inherit;
+	}
+	md-checkbox {
+		.md-container {
+			top: 11%;
+			left: -7px;
+		}
+		
+		&.md-checked .md-icon{
+			background-color: #58585a;
+		}
+	}
+}
+.loading{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+
+

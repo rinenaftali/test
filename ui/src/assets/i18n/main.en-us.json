@@ -1,0 +1,110 @@
+{
+	"COMMON" : {
+		"ACTION.CSV" : "Export to csv format",
+		"ERROR" : {
+			"TITLE" : "Error",
+			"ARIA_TITLE" : "Error", 
+			"OK" : "OK",
+			"CONTENT" : {
+				"404" : "Server error", 
+				"401" : "the server responded with a status of 401 (Unauthorized)"
+			}
+		},
+		"CONFIRM" : {
+			"TITLE" : "Confirm",
+			"ARIA_TITLE" : "Confirm", 
+			"OK" : "OK",
+			"CANCEL" : "Cancel",
+			"CONTENT" : "Are you sure?"
+		}
+	},
+    "NAV_BAR": {
+        "HOME": "home",
+        "APPROVAL": "approval",
+        "CAMPAIGNS" : "campaigns"
+        
+    },
+    "MAIN" : {
+    	"LOGIN": "Login",
+    	"USERNAME" : "Username",
+    	"EMAIL": "Email",
+    	"PASSWORD" : "Password",
+    	"ERROR_LOGIN" : "Incorrect password or confirmation code entered. Please try again."
+    },
+    "GRID" : {
+    	"ENABLE_FILTER" : "Toggle Filtering",
+    	"SELECT_VALUES" : {
+    		"SELECT_ALL"  : "All",
+			"SELECT_NONE"  : "None",
+			"RESET"  : "Undo",
+			"SEARCH" : "Type here to search...",
+			"NOTHING_SELECT" : "Nothing is selected"
+    	}
+    },
+    "APPROVAL" : {
+    	"PAGE_TITLE" : "Keyword Changes",
+    	"DIRTY_MESSAGE" : "Some keyword statuses were changed! \n Hit OK to go to the Campaign Summary page and lose your changes,\n or hit Cancel to remain on this page and save your changes.",
+     	"TITLE" : {
+     		"GRID_TITLE" : "Account : {{accountName}} <br>  Campaign : {{campName}}",
+     		"STATUS" : "Status",
+     		"KEYWORDS" : "Keywords",
+     		"RECOMENDED" : "Recommended change",
+     		"TYPE" : "Keyword type",
+     		"AD_GROUP" : "Ad group",
+     		"SELECT_CAMPAIGN" : "Select campaign",
+     		"SELECT_ACCOUNT" : "Select account",
+     		"CAMPAIGNS" : "Campaigns",
+     		"ACCOUNTS" : "Accounts" 
+     	},
+     	"ACTION" : {
+     		"APPROVE" : "Approve",
+     		"RESET" : "Return to pending",
+     		"REJECT" : "Reject",
+     		"SAVE" : "Save",
+     		"REASSIGN" : "Assign ad-group" 
+     	},
+     	"MENU" : {
+     		"BROAD" : "Broad",
+     		"EXACT" : "Exact",
+     		"PHRASE" : "Phrase",
+     		"PENDING" : "Pending",
+     		"APPROVED" : "Approved",
+     		"REJECTED" : "Rejected",
+     		"ADD_AD_GROUP" : "Add to Campaign",
+     		"REMOVED" : "Remove from Campaign",
+     		"UNCHANGED" : "Existing Keyword – No change"
+     		
+     	},
+     	"REASSIGN" : {
+     		"TITLE" : "Assign ad-group",
+     		"CONTENT" : "Select ad-group"
+     		}
+    },
+    "CAMPAIGNS" : {
+    	"PAGE_TITLE" : "Campaign Changes Summary",
+     	"TITLE" : {
+     		"STATUS" : "Status",
+     		"ACCOUNT_NAME" : "Account name",
+     		"CAMPAIGN_NAME" : "Campaign name",
+     		"LAST_UPDATE" : "Last update",
+     		"EMPTY_DATE_VALUE" : "Never"
+     	},
+     	"ACTION" : {
+     		"APPROVE" : "Approve",
+     		"SEND" : "Send Updates",
+     		"CANCEL" : "Cancel",
+     		"UNAPPROVE" : "Back to pending",
+     		"UNCANCEL" : "Undo Cancel"
+     	},
+     	"STATUS" : {
+     		"STATUS_SUMMARY" : "Pending : {{pendingNum}},  Rejected : {{rejectedNum}}, Approved : {{approvedNum}}",
+     		"PENDING" : "Pending Review",
+     		"REVIEWED" : "Pending approval",
+     		"APPROVED" : "Approved",
+     		"SENT" : "Updates Sent",
+     		"DEPLOYED" : "Updates Deployed",
+     		"CANCELLED" : "Cancelled",
+     		"PENDING_SEND" : "Pending send"
+     	}
+    }
+}

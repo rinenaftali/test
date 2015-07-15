@@ -1,0 +1,24 @@
+<header navbar-drv></header>
+<form ng-submit="logIn()" class="login">
+	  <fieldset>
+	    
+	  	<legend class="legend" translate="MAIN.LOGIN"></legend>
+	    
+	    <div class="input">
+	    	<input type="input" ng-model="username" placeholder="{{::'MAIN.USERNAME' | translate}}" required />
+	      <span><i class="fa fa-user"></i></span>
+	    </div>
+	    
+	    <div class="input">
+	    	<input type="password" ng-model="password" placeholder="{{::'MAIN.PASSWORD' | translate}}"  required/>
+	      <span><i class="fa fa-lock"></i></span>
+	    </div>
+	    
+	    <md-button type="submit" class="submit md-fab"><i class="fa fa-long-arrow-right" aria-label="submit"></i></md-button>
+	    
+	  </fieldset>
+	  
+	  <div ng-class="{'feedback-error' : feedback.error}" class="feedback">{{feedback.messege | translate}}</div>
+  </form>
+  
+
