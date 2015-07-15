@@ -4,7 +4,7 @@ machine:
 dependencies:
   pre:
     - if  [[ $CIRCLE_BRANCH == master ]] || [[ $CIRCLE_BRANCH == ui-* ]] ; then 
-        gulp jshint
+        gulp jshint 
 	gulp jshint
 	gulp protractor	 ; fi 
 test:
