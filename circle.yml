@@ -10,5 +10,5 @@ test:
        - cd ui && gulp jshint 
        - cd ui && gulp jshint
        - cd ui && gulp protractor 
-    fi
+    fi \
 
