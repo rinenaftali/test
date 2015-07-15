@@ -4,7 +4,9 @@
   "description": "ui",
   "repository": "git",
   "readme": "ui",
-  "dependencies": {},
+  "dependencies": {
+    "protractor": "^2.1.0"
+  },
   "devDependencies": {
     "babel-loader": "4.0.0",
     "browser-sync": "2.1.4",
@@ -47,7 +49,7 @@
     "main-bower-files": "2.5.0",
     "merge": "1.2.0",
     "merge-stream": "0.1.7",
-    "protractor": "1.7.0",
+    "protractor": "2.1.0",
     "require-dir": "0.1.0",
     "uglify-save-license": "0.4.1",
     "wiredep": "2.2.0",
