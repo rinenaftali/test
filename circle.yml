@@ -6,10 +6,9 @@ dependencies:
     - bash ui-pre.sh
 test:
   override:
-    if  [[ $CIRCLE_BRANCH == master ]] || [[ $CIRCLE_BRANCH == ui-* ]] ; then
+    - if  [[ $CIRCLE_BRANCH == master ]] || [[ $CIRCLE_BRANCH == ui-* ]] ; then \
     cd ui && gulp jshint
     cd ui && gulp jshint
-    cd ui && gulp protractor		
-    fi
+    cd ui && gulp protractor fi
     
 
