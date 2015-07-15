@@ -11,8 +11,8 @@ dependencies:
         sudo apt-get update && sudo apt-get install --only-upgrade google-chrome-stable ; fi
 test:
   override:
-    - if  [[ $CIRCLE_BRANCH == master ]] || [[ $CIRCLE_BRANCH == ui-* ]] ; then 
+    - if  [[ $CIRCLE_BRANCH != master ]] ; then 
         cd ui && gulp jshint &&
-        cd ui && gulp test &&
-        cd ui && gulp protractor ; fi
+        gulp test &&
+        gulp protractor ; fi
 

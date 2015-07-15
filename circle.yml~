@@ -12,7 +12,7 @@ dependencies:
 test:
   override:
     - if  [[ $CIRCLE_BRANCH == master ]] || [[ $CIRCLE_BRANCH == ui-* ]] ; then 
-        cd ui && gulp jshint
-        cd ui && gulp test
-        cd ui && gulp protractor ; fi
+        cd ui && gulp jshint &&
+        gulp test &&
+        gulp protractor ; fi
 
