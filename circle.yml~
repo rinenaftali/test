@@ -8,6 +8,5 @@ dependencies:
     - cd ui && npm install
     - cd ui && bower install
 test:
-
   override:
     - cd ui && gulp test	
