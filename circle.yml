@@ -1,6 +1,4 @@
 test:
-  production:
-     branch: ui	
-     pre:
-       - sudo apt-get update && sudo apt-get install --only-upgrade google-chrome-stable
+   pre:
+       - echo ${CIRCLE_BRANCH}
 
