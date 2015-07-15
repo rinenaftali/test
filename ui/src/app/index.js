@@ -71,8 +71,8 @@ angular.module('uiApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngR
 		controller: 'loginCtrl'
 	});
 	
-	$urlRouterProvider.otherwise( function($injector, $location) {
-        var $state = $injector.get("$state");
+	$urlRouterProvider.otherwise( function($injector) {
+        var $state = $injector.get('$state');
         $state.go(HOME_PAGE);
     });
 })
