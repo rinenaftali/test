@@ -4,7 +4,7 @@ machine:
 dependencies:
   pre:
     - npm install -g gulp
-    - npm -g install bower
+    - npm install -g bower
     - cd ui && npm install
     - cd ui && bower install
 test:
