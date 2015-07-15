@@ -1,4 +1,15 @@
+machine:
+  node:
+    version: 0.10.25
+dependencies:
+  pre:
+    - bash test.sh
 test:
-   pre:
-       - echo ${CIRCLE_BRANCH} 
+  pre:
+    - sudo apt-get update && sudo apt-get install --only-upgrade google-chrome-stable
+  override:
+    - cd ui && gulp jshint
+    - cd ui && gulp test
+    - cd ui && gulp protractor		
+
 
