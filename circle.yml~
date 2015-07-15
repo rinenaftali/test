@@ -3,14 +3,12 @@ machine:
     version: 0.10.25
 dependencies:
   pre:
-    - npm install -g gulp
-    - npm install -g bower
-    - cd ui && npm install
-    - cd ui && bower install
+    - bash ui-pre.sh
 test:
-  pre:
-     - sudo apt-get update && sudo apt-get install --only-upgrade google-chrome-stable
   override:
+    - bash ui-test.sh
     - cd ui && gulp jshint
     - cd ui && gulp test
     - cd ui && gulp protractor		
+
+
