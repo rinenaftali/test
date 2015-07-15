@@ -4,7 +4,7 @@ machine:
 test:
   pre:
     - npm install -g gulp
-    - npm install
-    - bower install
+    - cd ui && npm install
+    - cd ui && bower install
   override:
-    - gulp test	
+    - cd ui && gulp test	
