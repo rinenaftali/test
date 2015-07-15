@@ -1,5 +1,5 @@
 test:
-  server:
+  production:
      branch: ui	
      pre:
        - sudo apt-get update && sudo apt-get install --only-upgrade google-chrome-stable
