@@ -9,4 +9,4 @@ dependencies:
     - cd ui && bower install
 test:
   override:
-    - cd ui && gulp test	
+    - cd ui && gulp analyze	

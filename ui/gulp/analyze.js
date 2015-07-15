@@ -24,18 +24,10 @@ module.exports = function(options) {
 	    return gulp
 	        .src(jsfiles)
 	        .pipe($.jshint())
-	        .pipe($.jshint.reporter('jshint-stylish'));
+	        .pipe($.jshint.reporter('jshint-stylish'))
+	    	.pipe($.jshint.reporter('fail'));
 	});
 
 	gulp.task('analyze',['jshint','test']);
-	
-	gulp.task('serve:e2e', ['inject'], function () {
-	    browserSyncInit([options.tmp + '/serve', options.src],getFiles());
-	  });
-
-	  gulp.task('serve:e2e-dist', ['build'], function () {
-	    browserSyncInit(options.dist);
-	  });
-
 }
 

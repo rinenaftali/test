@@ -70,11 +70,11 @@ angular.module('uiApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngR
 		},
 		controller: 'loginCtrl'
 	});
-
-	$urlRouterProvider
-	.when('', HOME_PAGE)
-	.when('/', HOME_PAGE)
-	.otherwise(HOME_PAGE);
+	
+	$urlRouterProvider.otherwise( function($injector, $location) {
+        var $state = $injector.get("$state");
+        $state.go(HOME_PAGE);
+    });
 })
 .config(function(uiSelectConfig) {
   uiSelectConfig.theme = 'select2';
