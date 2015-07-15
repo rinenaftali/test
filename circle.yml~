@@ -7,8 +7,5 @@ dependencies:
 test:
   override:
     - bash ui-test.sh
-    - cd ui && gulp jshint
-    - cd ui && gulp test
-    - cd ui && gulp protractor		
-
+    
 
