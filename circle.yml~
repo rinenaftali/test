@@ -1,10 +1,13 @@
 machine:
   node:
     version: 0.10.25
-test:
+dependencies:
   pre:
     - npm install -g gulp
-    - npm install
-    - bower install
+    - npm -g install bower
+    - cd ui && npm install
+    - cd ui && bower install
+test:
+
   override:
-    - gulp test	
+    - cd ui && gulp test	
